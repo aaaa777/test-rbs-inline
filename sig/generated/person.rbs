@@ -1,0 +1,19 @@
+# Generated from lib/person.rb with RBS::Inline
+
+class Person
+  # @dynamic name
+  attr_reader name: String
+
+  # @dynamic addresses
+  attr_reader addresses: Array[String]
+
+  # @rbs name: String
+  # @rbs addresses: Array[String]
+  # @rbs return: void
+  def initialize: (name: String, addresses: Array[String]) -> void
+
+  def to_s: () -> String
+
+  # @rbs &block: (String) -> void
+  def each_address: () { (String) -> void } -> void
+end
