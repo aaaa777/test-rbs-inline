@@ -1,2 +1,5 @@
+require_relative 'person'
+
 person = Person.new
-person.name
+person.name = 'Alice'
+puts person.name
